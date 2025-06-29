@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "exppress": "^0.0.1-security",
-    "express": "^5.1.0"
-  }
-}
