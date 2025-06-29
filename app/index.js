@@ -1,6 +1,13 @@
 // .env から環境変数を読み込む
 require('dotenv').config();
 
+const express = require('express');
+const app = express();
+app.get('/', (req, res) => res.send('Bot is alive!'));
+app.listen(process.env.PORT || 3000, () => {
+    console.log(`🌐 Webサーバー起動中 on ${process.env.PORT || 3000}`);
+});
+
 // その他の require に続けて
 const cron = require('node-cron');
 const channelId = process.env.CHANNEL_ID;
